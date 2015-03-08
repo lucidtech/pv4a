@@ -36,8 +36,8 @@ module.exports.routes = {
     view: 'index'
   }
   , 'get /listUsers' : 'UserController.listUsers'
-  , 'get /login' : 'UserController.login'
-  , 'post /login/callback' : 'UserController.loginCallback'
+  , 'get /login' : 'passport.login'
+  , 'post /logout' : 'passport.loginCallback'
 
 
   /***************************************************************************
